@@ -1,0 +1,25 @@
+:root {
+    --primary: hsl(var(--rtwc-primary));
+    --secondary: hsl(var(--rtwc-secondary));
+    --accent: hsl(var(--rtwc-accent));
+    --background: hsl(var(--rtwc-background));
+    --base: hsl(var(--rtwc-base));
+    --muted: hsl(var(--rtwc-muted));
+    --light-muted: hsl(var(--rtwc-light-muted));
+    --corn: hsl(var(--rtwc-corn));
+    --seal: hsl(var(--rtwc-seal));
+    --ocean: hsl(var(--rtwc-ocean));
+    --emphasis: hsl(var(--rtwc-emphasis));
+    --destructive: hsl(var(--rtwc-destructive));
+    --input: hsl(var(--rtwc-input));
+    --ring: hsl(var(--rtwc-ring));
+    --border: hsl(var(--rtwc-border));
+    
+    --radius-none: 0px;
+    --radius-sm: 5px;
+    --radius-md: 10px;
+    --radius-lg: 20px;
+    
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Lato', sans-serif;
+}

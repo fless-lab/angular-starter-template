@@ -1,0 +1,43 @@
+@mixin center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin responsive($breakpoint) {
+    @if $breakpoint == small {
+      @media (max-width: 600px) { @content; }
+    } @else if $breakpoint == medium {
+      @media (max-width: 768px) { @content; }
+    } @else if $breakpoint == large {
+      @media (max-width: 1024px) { @content; }
+    }
+  }
+  
+  @mixin smooth-transition($duration: 0.3s, $property: all, $timing-function: ease-in-out) {
+    transition: $property $duration $timing-function;
+  }
+  
+  @mixin truncate-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  @mixin box-shadow($x: 0, $y: 2px, $blur: 4px, $spread: 0, $color: rgba(0, 0, 0, 0.1)) {
+    box-shadow: $x $y $blur $spread $color;
+  }
+  
+  @mixin fluid-font-size($min-size: 1rem, $max-size: 2rem) {
+    font-size: calc(#{$min-size} + (#{$max-size} - #{$min-size}) * ((100vw - 320px) / (1600 - 320)));
+  }
+  
+  @mixin themed-color($color-variable) {
+    color: var(--#{$color-variable});
+  }
+  
+  @mixin simple-grid($columns: 12, $gap: 1rem) {
+    display: grid;
+    grid-template-columns: repeat(#{$columns}, 1fr);
+    gap: $gap;
+  }
