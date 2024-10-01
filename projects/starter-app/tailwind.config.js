@@ -17,6 +17,18 @@ module.exports = {
         'md': 'var(--radius-md)',
         'lg': 'var(--radius-lg)',
       },
+      fontSize: {
+        'title': 'var(--fs-title)',
+        'subtitle': 'var(--fs-subtitle)',
+        'body': 'var(--fs-body)',
+      },
+      screens: {
+        mobile: 'var(--breakpoint-mobile)',
+        tablet: 'var(--breakpoint-tablet)',
+        laptop: 'var(--breakpoint-laptop)',
+        desktop: 'var(--breakpoint-desktop)',
+        tv: 'var(--breakpoint-tv)',
+      },
     },
   },
   plugins: [

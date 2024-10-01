@@ -20,6 +20,13 @@
     --radius-md: 10px;
     --radius-lg: 20px;
     
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Lato', sans-serif;
+    --fs-title: 48px;
+    --fs-subtitle: 36px;
+    --fs-body: 16px;
+
+    --breakpoint-mobile: 480px;
+    --breakpoint-tablet: 768px;
+    --breakpoint-laptop: 1280px;
+    --breakpoint-desktop: 1440px;
+    --breakpoint-tv: 1920px;
 }
